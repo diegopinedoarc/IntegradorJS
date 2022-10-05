@@ -305,7 +305,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: wheat;
+  background: url(../images/back1.webp);
+  box-shadow: 2px 2px 8px 1px black;
+  margin-bottom: 0.2rem;
 }
 .catalog__products {
   display: flex;
@@ -403,7 +405,7 @@ body {
   padding: 0.5rem;
   position: sticky;
   top: 0rem;
-  background: white;
+  background: url(../images/back1.webp);
   z-index: 999999;
   box-shadow: 2px 2px 8px 1px var(--celeste);
 }
@@ -996,8 +998,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    background: wheat;
+    background: url(../images/back1.webp);
   }
   .catalog__products {
     display: flex;
