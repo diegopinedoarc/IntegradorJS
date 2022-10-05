@@ -492,6 +492,8 @@ body {
   border-top-left-radius: 0.8rem;
   color: wheat;
   box-shadow: 4px 4px 8px 4px wheat;
+  z-index: 11111111111;
+  margin-bottom: 2rem;
 }
 #CartBTN {
   cursor: pointer;
@@ -501,7 +503,7 @@ body {
   flex-direction: column;
   gap: 0.8rem;
   margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2rem;
 }
 .close {
   width: 1rem;
@@ -571,6 +573,7 @@ body {
   background: rgba(250, 250, 200, 0.5);
   font-size: 1.2rem;
   box-shadow: 1px 1px 8px 1px wheat;
+  margin-bottom: 1rem;
 }
 .moreLess {
   display: flex;
@@ -1101,9 +1104,9 @@ body {
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
   }
-  .slogan2 h2 {
+  .slogan2 p {
     font-family: var(--font3);
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     text-align: center;
   }
   .categories {
