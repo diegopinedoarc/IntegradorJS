@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Drinks&Co</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <a class="links" href="./index.html"
+          ><img class="logo" src="./assets/images/logo2.png" alt="imgLogo"
+        /></a>
+        <div class="userLog">
+          <!-- <p class="saludo">¡Bienevenido ${usuarioLogueado.nombre}!</p> -->
+          <!-- <button class="deslog">Salir</button> -->
+        </div>
+        <div class="hamburger">
+          <div class="_layer -top"></div>
+          <div class="_layer -mid"></div>
+          <div class="_layer -bottom"></div>
+        </div>
+        <nav class="nav menuppal">
+          <ul class="nav__ul">
+            <li class="nav__item">
+              <a class="links" href="#contactForm">Contacto</a>
+            </li>
+            <li class="nav__item">
+              <a id="logdisplay" class="links" href="./login.html"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </li>
+            <li class="nav__item" id="CartBTN">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cantCart"></span>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="categories">
+        <!-- <h3 class="titlecat">Cateogrias</h3> -->
+        <div class="cates">
+          <div
+            class="categories__card catewhiskey filterCat"
+            data-category="whiskeys"
+          >
+            <h3 class="catCard__title filterCat" data-category="whiskeys">
+              Whiskeys
+            </h3>
+          </div>
+          <div
+            class="categories__card catelicor filterCat"
+            data-category="licores"
+          >
+            <h3 class="catCard__title filterCat" data-category="licores">
+              Licores
+            </h3>
+          </div>
+          <div class="categories__card categin filterCat" data-category="gin">
+            <h3 class="catCard__title filterCat" data-category="gin">Gin</h3>
+          </div>
+          <div
+            class="categories__card cateaperitivo filterCat"
+            data-category="aperitivos"
+          >
+            <h3 class="catCard__title filterCat" data-category="aperitivos">
+              Aperitivos
+            </h3>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+              class="borders"
+              src="./assets/images/publijohny.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              class="borders"
+              src="./assets/images/publigin.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              class="borders"
+              src="./assets/images/publijager.webp"
+              style="width: 100%"
+            />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <div class="slogan">
+        <h2>Compra desde la comodidad de tu casa</h2>
+      </div>
+      <div class="slogan2">
+        <div>
+          <p><i class="fa-solid fa-truck"></i> Envios a todo el país</p>
+        </div>
+        <div>
+          <p>
+            <i class="fa-regular fa-credit-card"></i> Tarjeta de crédito o
+            débito
+          </p>
+        </div>
+        <div><i class="fa-regular fa-clock"></i> Ver tiempos de envío</div>
+      </div>
+      <section id="catalog" class="catalog">
+        <div class="catalog__products">
+          <!-- <div class="productCard">
+            <img
+              class="productCard__img"
+              src="./assets/images/jackdanielsbotella.jpg"
+              alt=""
+            />
+            <div class="productCard__info">
+              <h3 class="productCard__name">Jack Daniels</h3>
+              <span class="productCard__price">$8000</span>
+              <div class="productCard__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <button class="productCard__button">Comprar</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="cart">
+        <p class="close" id="close">X</p>
+        <h3>Tus productos</h3>
+        <div class="cart__Container"></div>
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total">$</span>
+        </div>
+        <div class="btncont"><button class="buy-btn">Comprar</button></div>
+      </section>
+      <section class="contact">
+        <div class="contactContainer">
+          <form id="contactForm" action="">
+            <h2 class="contact__title">Contactanos</h2>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ingresa tu email"
+            />
+            <input type="text" placeholder="ingresa tu consulta" />
+            <button class="btnForm">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer"><p>Realizado por Diego Pinedo - 2022</p></footer>
+    </div>
+    <script src="./assets/js/stock.js"></script>
+    <script src="./assets/js/render.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

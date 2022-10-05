@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/regiterStyle.css" />
+    <title>Drinks&Co - Registro</title>
+  </head>
+  <body>
+    <hero class="hero">
+      <div class="logoName">
+        <a href="./index.html">
+          <img class="logo" src="./assets/images/logo2.png" alt="insertlogo" />
+        </a>
+      </div>
+    </hero>
+    <section class="registro">
+      <form class="regContainer">
+        <h2>Registro</h2>
+        <input type="text" placeholder="Nombre" id="nombreReg" />
+        <input type="text" placeholder="Apellido" id="apellidoReg" />
+        <input
+          type="email"
+          name=""
+          id="emailRegister"
+          placeholder="Ingresa tu correo "
+        />
+        <input
+          type="password"
+          name=""
+          id="passwordRegister"
+          placeholder="Ingresa tu contraseña"
+        />
+        <input
+          type="password"
+          name=""
+          id="passwordConfirm"
+          placeholder="Confirma tu contraseña"
+        />
+        <label id="labels" for="password" class="labels"
+          >La contraseña debe contener 8 caracteres y al menos una mayuscula,
+          una minuscula, un numero y un simbolo</label
+        >
+
+        <button class="registerBTN">Registrarme</button>
+      </form>
+      <p id="errores"></p>
+    </section>
+
+    <script src="./assets/js/register.js" type="module"></script>
+  </body>
+</html>
